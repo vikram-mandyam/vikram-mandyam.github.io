@@ -125,7 +125,53 @@ hr {
 }
 
 .copyright {
-  text-align: center;
+    text-align: center;
+}
+
+.copyright form {
+    margin-top: 20px;
+}
+
+.copyright input[type ="submit"] {
+    background-color: #EEF0F2; /* Gray */
+    border: none;
+    border-radius: 5px;
+    color: black;
+    padding: 2px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border:solid 0.3px #666;
+}
+
+.copyright input[type ="submit"]:hover {
+    background-color: #EEF0F2; /* Grey */
+    color: black;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.24), 0 8px 10px 0 rgba(0,0,0,0.19);
+}
+
+.copyright form a {
+    font-size: 60%;
+}
+
+.glyphicon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    /* font-weight: 200; */
+    font-size: 90%;
+    /* line-height: 1; */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.glyphicon-new-window:before{
+    content:"\e164";
 }
 
 .post-nav {
