@@ -1,0 +1,241 @@
+<!doctype html><html lang=en-us>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V6MJ55W2EW"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-V6MJ55W2EW',{anonymize_ip:!1})}</script>
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','G-V6MJ55W2EW','auto'),ga('send','pageview'))</script>
+<script async src=https://www.google-analytics.com/analytics.js></script>
+<script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/vikram-mandyam.com\/"},"articleSection":"posts","name":"Explain in simple terms: Unicode","headline":"Explain in simple terms: Unicode","description":"Unicode is an important area that programmers needs to know, particularly if one is doing some form of text processing and\/or internationalization and localization. Even if you are a seasoned coder, you may feel like you\u0026rsquo;re on thin ice with Unicode.\nSome weeks ago, I tried to get to the bottom of Unicode, and I\u0026rsquo;m writing this article to document my understanding of it.\nCommon terms First, let us look at some terms which are commonly known, but may not be as well understood.","inLanguage":"en-US","author":"Vikram Mandyam","creator":"Vikram Mandyam","publisher":"Vikram Mandyam","accountablePerson":"Vikram Mandyam","copyrightHolder":"Vikram Mandyam","copyrightYear":"151511","datePublished":"2020-11-15 00:00:00 \u002b0000 UTC","dateModified":"2020-11-15 00:00:00 \u002b0000 UTC","url":"https:\/\/vikram-mandyam.com\/posts\/2020\/11\/15\/explain-in-simple-terms-unicode\/","wordCount":"1047","keywords":["unicode","Blog"]}</script>
+<title>Explain in simple terms: Unicode - Vikram Mandyam</title>
+<meta property="og:title" content="Explain in simple terms: Unicode - Vikram Mandyam">
+<meta name=twitter:card content="summary">
+<meta property="description" content="Unicode is an important area that programmers needs to know, particularly if one is doing some form of text processing and/or internationalization and localization. Even if you are a seasoned coder, &amp;hellip;">
+<meta property="og:description" content="Unicode is an important area that programmers needs to know, particularly if one is doing some form of text processing and/or internationalization and localization. Even if you are a seasoned coder, &amp;hellip;">
+<link rel=stylesheet href=https://vikram-mandyam.com/css/style.css>
+<link rel=stylesheet href=https://vikram-mandyam.com/css/fonts.css>
+</head>
+<body class=posts>
+<header class=masthead>
+<h1><a href=https://vikram-mandyam.com/>Vikram Mandyam</a></h1>
+<p class=tagline>I write about software, cloud, books, emacs, productivity, photography and fitness</p>
+<nav class=menu>
+<input id=menu-check type=checkbox hidden>
+<label id=menu-label for=menu-check class=unselectable hidden>
+<span class="icon close-icon">✕</span>
+<span class="icon open-icon">☰</span>
+<span class=text>Menu</span>
+</label>
+<ul>
+<li><a href=https://vikram-mandyam.com/>Home</a></li>
+<li><a href=https://vikram-mandyam.com/about/>About</a></li>
+<li><a href=https://vikram-mandyam.com/categories/>Categories</a></li>
+<li><a href=https://vikram-mandyam.com/posts/>All Posts</a></li>
+<li><a href=https://vikram-mandyam.com/tags/>Tags</a></li>
+<li><a href=https://vikram-mandyam.com/index.xml>RSS</a></li>
+</ul>
+</nav>
+</header>
+<article class=main>
+<header class=title>
+<h1>Explain in simple terms: Unicode</h1>
+<h4 style=text-align:center>[Vikram Mandyam]
+/ 2020-11-15</h4>
+<div class=share-buttons>
+<p>Share:&nbsp;&nbsp;&nbsp;</p>
+<a target=_blank rel="noopener noreferrer" aria-label="share Explain in simple terms: Unicode on twitter" href="https://twitter.com/intent/tweet/?text=Explain%20in%20simple%20terms%3a%20Unicode&url=https%3a%2f%2fvikram-mandyam.com%2fposts%2f2020%2f11%2f15%2fexplain-in-simple-terms-unicode%2f&hashtags=unicode"><svg viewBox="0 0 512 512"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H62.554c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892zM195.519 424.544c135.939.0 210.268-112.643 210.268-210.268.0-3.218.0-6.437-.153-9.502 14.406-10.421 26.973-23.448 36.935-38.314-13.18 5.824-27.433 9.809-42.452 11.648 15.326-9.196 26.973-23.602 32.49-40.92-14.252 8.429-30.038 14.56-46.896 17.931-13.487-14.406-32.644-23.295-53.946-23.295-40.767.0-73.87 33.104-73.87 73.87.0 5.824.613 11.494 1.992 16.858-61.456-3.065-115.862-32.49-152.337-77.241-6.284 10.881-9.962 23.601-9.962 37.088.0 25.594 13.027 48.276 32.95 61.456-12.107-.307-23.448-3.678-33.41-9.196v.92c0 35.862 25.441 65.594 59.311 72.49-6.13 1.686-12.72 2.606-19.464 2.606-4.751.0-9.348-.46-13.946-1.38 9.349 29.426 36.628 50.728 68.965 51.341-25.287 19.771-57.164 31.571-91.8 31.571-5.977.0-11.801-.306-17.625-1.073 32.337 21.15 71.264 33.41 112.95 33.41z"/></svg>
+</a>
+<a target=_blank rel="noopener noreferrer" aria-label="share Explain in simple terms: Unicode on linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fvikram-mandyam.com%2fposts%2f2020%2f11%2f15%2fexplain-in-simple-terms-unicode%2f&title=Explain%20in%20simple%20terms%3a%20Unicode&summary=Explain%20in%20simple%20terms%3a%20Unicode&source=https%3a%2f%2fvikram-mandyam.com%2fposts%2f2020%2f11%2f15%2fexplain-in-simple-terms-unicode%2f"><svg viewBox="0 0 512 512"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H62.554c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892zM160.461 423.278V197.561h-75.04v225.717h75.04zm270.539.0V293.839c0-69.333-37.018-101.586-86.381-101.586-39.804.0-57.634 21.891-67.617 37.266v-31.958h-75.021c.995 21.181.0 225.717.0 225.717h75.02V297.222c0-6.748.486-13.492 2.474-18.315 5.414-13.475 17.767-27.434 38.494-27.434 27.135.0 38.007 20.707 38.007 51.037v120.768H431zM123.448 88.722C97.774 88.722 81 105.601 81 127.724c0 21.658 16.264 39.002 41.455 39.002h.484c26.165.0 42.452-17.344 42.452-39.002-.485-22.092-16.241-38.954-41.943-39.002z"/></svg>
+</a>
+<a target=_blank rel="noopener noreferrer" aria-label="share Explain in simple terms: Unicode on reddit" href="https://reddit.com/submit?url=https%3a%2f%2fvikram-mandyam.com%2fposts%2f2020%2f11%2f15%2fexplain-in-simple-terms-unicode%2f&title=Explain%20in%20simple%20terms%3a%20Unicode"><svg viewBox="0 0 512 512"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H62.554c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892zM446 265.638c0-22.964-18.616-41.58-41.58-41.58-11.211.0-21.361 4.457-28.841 11.666-28.424-20.508-67.586-33.757-111.204-35.278l18.941-89.121 61.884 13.157c.756 15.734 13.642 28.29 29.56 28.29 16.407.0 29.706-13.299 29.706-29.701.0-16.403-13.299-29.702-29.706-29.702-11.666.0-21.657 6.792-26.515 16.578l-69.105-14.69c-1.922-.418-3.939-.042-5.585 1.036-1.658 1.073-2.811 2.761-3.224 4.686l-21.152 99.438c-44.258 1.228-84.046 14.494-112.837 35.232-7.468-7.164-17.589-11.591-28.757-11.591-22.965.0-41.585 18.616-41.585 41.58.0 16.896 10.095 31.41 24.568 37.918-.639 4.135-.99 8.328-.99 12.576.0 63.977 74.469 115.836 166.33 115.836s166.334-51.859 166.334-115.836c0-4.218-.347-8.387-.977-12.493 14.564-6.47 24.735-21.034 24.735-38.001zM326.526 373.831c-20.27 20.241-59.115 21.816-70.534 21.816-11.428.0-50.277-1.575-70.522-21.82-3.007-3.008-3.007-7.882.0-10.889 3.003-2.999 7.882-3.003 10.885.0 12.777 12.781 40.11 17.317 59.637 17.317 19.522.0 46.86-4.536 59.657-17.321 3.016-2.999 7.886-2.995 10.885.008 3.008 3.011 3.003 7.882-.008 10.889zm-5.23-48.781c-16.373.0-29.701-13.324-29.701-29.698.0-16.381 13.328-29.714 29.701-29.714 16.378.0 29.706 13.333 29.706 29.714.0 16.374-13.328 29.698-29.706 29.698zM160.91 295.348c0-16.381 13.328-29.71 29.714-29.71 16.369.0 29.689 13.329 29.689 29.71.0 16.373-13.32 29.693-29.689 29.693-16.386.0-29.714-13.32-29.714-29.693z"/></svg>
+</a>
+<a target=_blank rel="noopener noreferrer" aria-label="share Explain in simple terms: Unicode on facebook" href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fvikram-mandyam.com%2fposts%2f2020%2f11%2f15%2fexplain-in-simple-terms-unicode%2f"><svg viewBox="0 0 512 512"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H342.978V319.085h66.6l12.672-82.621h-79.272v-53.617c0-22.603 11.073-44.636 46.58-44.636H425.6v-70.34s-32.71-5.582-63.982-5.582c-65.288.0-107.96 39.569-107.96 111.204v62.971h-72.573v82.621h72.573V512h-191.104c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892z"/></svg>
+</a>
+</div>
+<hr>
+</header>
+<p><a href=https://en.wikipedia.org/wiki/Unicode>Unicode</a> is an important area that programmers needs to know, particularly if
+one is doing some form of text processing and/or internationalization and
+localization. Even if you are a seasoned coder, you may feel like you&rsquo;re on
+thin ice with Unicode.</p>
+<p>Some weeks ago, I tried to get to the bottom of Unicode, and I&rsquo;m writing this
+article to document my understanding of it.</p>
+<h2 id=common-terms>Common terms</h2>
+<p>First, let us look at some terms which are commonly known, but may not be as
+well understood.</p>
+<h3 id=glyphs-and-fonts>Glyphs and Fonts</h3>
+<p><a href=https://en.wikipedia.org/wiki/Font>Fonts</a> are a collection of patterns of ink on paper indicating how
+characters of text will look like. The pattern of ink for a given character
+in the set of characters is called a <a href=https://en.wikipedia.org/wiki/Glyph#Typography>glyph</a>. Depending on the font, multiple
+glyphs can exist for the same character.</p>
+<h3 id=character-set-and-character-encoding>Character set and character encoding</h3>
+<p>Every character in a character set must be identified by the computer. For
+this reason, every character has a code. American Standards Association
+created <a href=https://en.wikipedia.org/wiki/ASCII>ASCII or American Standard Code for Information Interchange</a> to
+achieve this.</p>
+<p>Not only does a computer need to know the code for a character, it also
+needs to know how the code is to be represented. This is called <a href=https://en.wikipedia.org/wiki/Character%5Fencoding>encoding</a>.
+For instance, in ASCII, the code for the lower case &lsquo;a&rsquo; is &lsquo;97&rsquo; which is
+encoded as a single byte &lsquo;0x61&rsquo;.</p>
+<h2 id=why-unicode>Why Unicode?</h2>
+<p>Since ASCII uses a single byte to represent the code for a character, it is
+not possible to support all the different characters that we have in all the
+languages around the world.</p>
+<p>For this reason, a better way was looked for, to codify characters and
+represent them in encodings. Thus, Unicode was born.</p>
+<p>In Unicode, code points are depicted as &ldquo;U+AAAA&rdquo;, where AAAA is a four digit
+hexadecimal number. For code points beyond U+FFFF, which is the maximum, the
+minimum number of digits needed to express the code point are used. For
+example, the code point for the letter &ldquo;A&rdquo; of the Kharoshthi script is
+expressed as U+10A00.</p>
+<p>Note that the character representations by Unicode/ASCII specify characters
+in an abstract way, without specifying how the characters are rendered on
+screen. This is done by the rendering engine, based on information such as
+font/glyphs, size, shape, color, style etc. Unicode is just used for
+encoding.</p>
+<p>Unicode was designed to be very compatible with ASCII, and so all ASCII code
+points are the same in Unicode.</p>
+<h2 id=lets-talk-about-unicode-and-its-encoding>Lets talk about Unicode and its encoding</h2>
+<p>Next, we need to deal with how to store and transport these Unicode
+representations on disk and over the wire. This is achieved with Unicode
+encoding. Encoding defines how a Unicode is written in terms of raw bits.
+There are a many types of encoding defined for storing Unicode data,
+involving fixed and variable width.</p>
+<p>A fixed-width encoding is one in which every code point is represented by a
+fixed number of bytes, while a variable-length encoding is one in which
+different characters can be represented by different numbers of bytes.
+UTF-32 and UCS2 are fixed width, UTF-7 and UTF-8 are variable width, and
+UTF-16 is a variable width encoding that looks deceptively similar to a
+fixed width encoding.</p>
+<h3 id=utf-8-encoding>UTF-8 Encoding</h3>
+<p>UTF-8 (Unicode Transformation Format 8-bit), a variable-length encoding, is
+by far the most popular encoding. Compared to fixed-width encoding such as
+UTF-16, UTF-8 saves a considerable amount of space for the same character.
+It is also very flexible, as it supports encoding of a huge range of code
+points. UTF-8 handles compatibility with ASCII by keeping all ASCII
+encodings untouched, and using the higher order bits for higher code
+points.</p>
+<p>Since UTF-8 is a variable length encoding, it is necessary for it to encode
+the length of the code point&rsquo;s representation in bytes into the first byte
+of the encoding itself, and then use subsequent bytes to add the
+representable bits.</p>
+<p>In one byte of a UTF-8 character encoding, we will get between 0 and 7 bits
+to the final code point. This reads like a long binary number from left to
+right. The bits that make up the binary representation of each code point
+are based on the bit masks shown below:</p>
+<table>
+<thead>
+<tr>
+<th>Bytes</th>
+<th>Bits</th>
+<th>Byte Mask</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>7</td>
+<td>0bbbbbbb</td>
+</tr>
+<tr>
+<td>2</td>
+<td>11</td>
+<td>110bbbbb 10bbbbbb</td>
+</tr>
+<tr>
+<td>3</td>
+<td>16</td>
+<td>1110bbbb 10bbbbbb 10bbbbbb</td>
+</tr>
+<tr>
+<td>4</td>
+<td>21</td>
+<td>11110bbb 10bbbbbb 10bbbbbb 10bbbbbb</td>
+</tr>
+<tr>
+<td>5</td>
+<td>26</td>
+<td>111110bb 10bbbbbb 10bbbbbb 10bbbbbb 10bbbbbb</td>
+</tr>
+<tr>
+<td>6</td>
+<td>31</td>
+<td>1111110b 10bbbbbb 10bbbbbb 10bbbbbb 10bbbbbb 10bbbbbb</td>
+</tr>
+<tr>
+<td>7</td>
+<td>36</td>
+<td>11111110 10bbbbbb 10bbbbbb 10bbbbbb 10bbbbbb 10bbbbbb 10bbbbbb</td>
+</tr>
+<tr>
+<td>8</td>
+<td>42</td>
+<td>11111111 10bbbbbb 10bbbbbb 10bbbbbb 10bbbbbb 10bbbbbb 10bbbbbb 10bbbbbb</td>
+</tr>
+</tbody>
+</table>
+<p>In the above representation, &lsquo;1&rsquo;s and &lsquo;0&rsquo;s are fixed, while the &lsquo;b&rsquo;s are
+the placeholders for bits from the Unicode&rsquo;s binary representation.</p>
+<p>For e.g. let us look at the code point, U+041F, which is the capital letter
+PE of the language Cyrillic. This is represented in binary as <code>100 0001 1111</code>, which is 11 bits in length. Using the above bit mask table, we can
+use row 2. Replacing the &lsquo;b&rsquo; with the bits we get the final encoded value
+as <code>0xd0 0x9</code>.</p>
+<h3 id=byte-order-mark>Byte Order mark</h3>
+<p>The big question that remains is how to determine if a given Unicode stream
+is UTF-8 or UTF-16 i.e which encoding type is used. This is provided by
+byte order mark. A byte order mark (BOM) is a sequence of bytes placed at
+the beginning of a Unicode stream. Multibyte Unicode encodings such as
+UTF-16 store the bytes that constitute a BOM code point in either order
+(highest or lowest byte first), depending on the endianness of the system
+(since systems can be big endian or little endian).</p>
+<p>For a UTF-8 encoded stream, the BOM 0xEF,0xBB,0xBF is encoded in UTF-8 and
+placed at the beginning of the stream. The actual output in bytes depends
+on the encoding itself and the endianness, so after reading the first four
+bytes of a Unicode stream, you can easily figure out the encoding type :</p>
+<table>
+<thead>
+<tr>
+<th>Encoding</th>
+<th>Byte Order Mask</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>UTF-16 big endian</td>
+<td>0xfe 0xff</td>
+</tr>
+<tr>
+<td>UTF-16 little endian</td>
+<td>0xff 0xfe</td>
+</tr>
+<tr>
+<td>UTF-32 big endian</td>
+<td>0x00 0x00 0xfe 0xff</td>
+</tr>
+<tr>
+<td>UTF-32 little endian</td>
+<td>0xff 0xfe 0x00 0x00</td>
+</tr>
+<tr>
+<td>UTF-8 little endian</td>
+<td>0xef 0xbb 0xbf</td>
+</tr>
+</tbody>
+</table>
+<p>Note that UTF-8 has only little endian</p>
+<h2 id=in-closing>In closing</h2>
+<p>Since UTF-8 is the most commonly used encoding, I will stop here and let you
+mull over what you&rsquo;ve just read..I hope I&rsquo;ve managed to simplify Unicode for
+you!</p>
+<footer>
+<hr>
+<div class=copyright>
+© <a href=https://vikram-mandyam.com/about>Vikram Mandyam</a> 2021 | <a href=https://github.com/vikram-mandyam>Github</a> | <a href=https://www.linkedin.com/in/vikram-mandyam/>LinkedIn</a> | <a href=https://twitter.com/vikram_mandyam>Twitter</a>
+</div>
+<hr>
+</footer>
+</article>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V6MJ55W2EW"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-V6MJ55W2EW',{anonymize_ip:!1})}</script>
+</body>
+</html>
