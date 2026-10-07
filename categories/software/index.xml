@@ -16,7 +16,25 @@ paragraph in a year-end list did not do it justice, so here is a longer
 write-up.&lt;/p>
 &lt;p>Between conceptual reading, side projects, and building agents at work, I have
 spent a good part of the last couple of years with LLMs. This book is
-the one that made me grok(no pun intended) the concepts!&lt;/p></description></item><item><title>The lesser-known skills of a Software Architect</title><link>https://vikram-mandyam.com/posts/2021/10/25/the-lesser-known-skills-of-a-software-architect/</link><pubDate>Mon, 25 Oct 2021 00:00:00 +0000</pubDate><guid>https://vikram-mandyam.com/posts/2021/10/25/the-lesser-known-skills-of-a-software-architect/</guid><description>&lt;p>For a while in the mid-2000s, due to the whole agile and XP movement, the
+the one that made me grok(no pun intended) the concepts!&lt;/p></description></item><item><title> What I learned from the book "The innovation stack"</title><link>https://vikram-mandyam.com/posts/2021/12/05/what-i-learned-from-the-book-the-innovation-stack/</link><pubDate>Sun, 05 Dec 2021 00:00:00 +0000</pubDate><guid>https://vikram-mandyam.com/posts/2021/12/05/what-i-learned-from-the-book-the-innovation-stack/</guid><description>&lt;figure>&lt;img src="https://vikram-mandyam.com/ox-hugo/innovation-stack.jpg">
+&lt;/figure>
+
+&lt;style>.org-center { margin-left: auto; margin-right: auto; text-align: center; }&lt;/style>
+&lt;div class="org-center">
+&lt;p>&lt;a href="https://www.amazon.in/Innovation-Stack-Building-Unbeatable-Business-ebook/dp/B07SZQN3P6" target="_blank" rel="noopener">Photo from the book&amp;rsquo;s Amazon.in page&lt;/a>
+&lt;/p>
+&lt;/div>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>I recently read a fascinating book by Jim McKelvey called &amp;ldquo;The Innovation
+Stack&amp;rdquo;. It is about the origin story of &amp;ldquo;Square&amp;rdquo; - the &amp;ldquo;payments startup&amp;rdquo;.
+Although this book is the story of Square, it is actually much more - part
+philosophy, part biography, part business book.&lt;/p>
+&lt;p>Here is my summary of it.&lt;/p>
+&lt;h2 id="entrepreneurship-is-different-from-building-a-business">Entrepreneurship is different from building a business&lt;/h2>
+&lt;p>The author says building a traditional business is not entrepreneurship. He
+talks of entrepreneurs as &amp;ldquo;rebels&amp;rdquo;, &amp;ldquo;explorers&amp;rdquo; and &amp;ldquo;risk-takers&amp;rdquo; who go
+deep into uncharted territory - a concept he calls &amp;ldquo;beyond the safety of the
+walled city&amp;rdquo;&lt;/p></description></item><item><title>The lesser-known skills of a Software Architect</title><link>https://vikram-mandyam.com/posts/2021/10/25/the-lesser-known-skills-of-a-software-architect/</link><pubDate>Mon, 25 Oct 2021 00:00:00 +0000</pubDate><guid>https://vikram-mandyam.com/posts/2021/10/25/the-lesser-known-skills-of-a-software-architect/</guid><description>&lt;p>For a while in the mid-2000s, due to the whole agile and XP movement, the
 term &amp;lsquo;Architect&amp;rsquo; was going out of fashion in the software industry. The
 DevOps movement has allowed the role of a software architect to make a
 comeback. The added velocity provided by DevOps, the humongous scale of data,
